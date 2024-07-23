@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Figtree", sans-serif;
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.card-main{
+    background-color: #fff;
+    display: flex;
+    width: 384px;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px hsl(0, 0%, 7%) solid;
+    box-shadow: 8px 8px 0px 0px #000
+}
+.card-main img{
+    border-radius: 8px;
+    margin: 24px;
+}
+.card-main .tag{
+    border-radius: 4px;
+    background-color: hsl(47, 88%, 63%);
+    margin-left: 24px;
+    width: 82px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+}
+.card-main p{
+    margin: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color:  hsl(0, 0%, 7%);
+}
+
+.card-main h1{
+    margin: 0 24px 12px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.card-main h1:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.card-main p2{
+    margin: 0 24px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+}
+.card-main .autor{
+    display: flex;
+    margin: 0 24px 24px;
+}
+.card-main .autor img{
+    height: 32px;
+    margin: 0;
+}
+.card-main .autor .name{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 12px;
+}
+@media only screen and (max-width: 375px) {
+    .card-main{
+        width: 327px;
+    }
+    .card-main .tag{
+        font-size: 12px;
+    }
+    .card-main p{
+        font-size: 12px;
+    }
+    .card-main h1{
+        font-size: 20px;
+    }
+    .card-main p2{
+        font-size: 14px;
+    }
+  }
